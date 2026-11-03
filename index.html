@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurante Flor do Barreto</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fffaf2;
+            color: #29251f;
+        }
+
+        header {
+            background: #263d2b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+            font-size: 14px;
+        }
+
+        .hero {
+            min-height: 390px;
+            padding: 75px 20px;
+            text-align: center;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.55),
+                    rgba(0,0,0,0.55)
+                ),
+                url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #d99b42;
+            color: #1e241d;
+            padding: 14px 24px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #263d2b;
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .descricao {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .cardapio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto 0;
+        }
+
+        .prato {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+            text-align: left;
+        }
+
+        .prato img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .prato-info {
+            padding: 18px;
+        }
+
+        .prato-info h3 {
+            margin-bottom: 8px;
+            color: #263d2b;
+        }
+
+        .preco {
+            display: block;
+            margin-top: 12px;
+            color: #a46b20;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .informacoes {
+            background: #edf0e8;
+        }
+
+        .informacoes p {
+            margin: 12px 0;
+        }
+
+        footer {
+            background: #263d2b;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 15px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Flor do Barreto</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#cardapio">Cardápio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="hero" id="inicio">
+            <h2>Sabor de comida de verdade!</h2>
+
+            <p>
+                Uma experiência especial para
+                aproveitar uma boa refeição.
+            </p>
+
+            <a href="#cardapio" class="botao">
+                Conheça nosso cardápio
+            </a>
+        </div>
+
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+
+            <p class="descricao">
+                Seja bem-vindo ao Restaurante Flor do Barreto!
+                Aqui você encontra uma página de apresentação
+                do estabelecimento, com informações sobre
+                refeições, cardápio e contato.
+            </p>
+        </section>
+
+        <section id="cardapio">
+            <h2>Nosso cardápio</h2>
+
+            <p>Confira alguns exemplos de pratos.</p>
+
+            <div class="cardapio">
+
+                <div class="prato">
+                    <img
+                        src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80"
+                        alt="Prato de refeição"
+                    >
+
+                    <div class="prato-info">
+                        <h3>Prato do dia</h3>
+
+                        <p>
+                            Exemplo de descrição de uma
+                            refeição completa.
+                        </p>
+
+                        <span class="preco">R$ 25,00</span>
+                    </div>
+                </div>
+
+                <div class="prato">
+                    <img
+                        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                        alt="Refeição com vegetais"
+                    >
+
+                    <div class="prato-info">
+                        <h3>Refeição especial</h3>
+
+                        <p>
+                            Exemplo de prato para
+                            apresentar no cardápio.
+                        </p>
+
+                        <span class="preco">R$ 30,00</span>
+                    </div>
+                </div>
+
+                <div class="prato">
+                    <img
+                        src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80"
+                        alt="Salada e refeição"
+                    >
+
+                    <div class="prato-info">
+                        <h3>Opção leve</h3>
+
+                        <p>
+                            Exemplo de opção para
+                            quem prefere uma refeição leve.
+                        </p>
+
+                        <span class="preco">R$ 22,00</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="informacoes" id="contato">
+            <h2>Visite-nos</h2>
+
+            <p><strong>Endereço:</strong> confirmar com o restaurante</p>
+
+            <p><strong>Funcionamento:</strong> confirmar horários</p>
+
+            <p><strong>Pedidos:</strong> entre em contato pelo WhatsApp</p>
+
+            <a
+                href="https://wa.me/5511999999999"
+                class="botao"
+                target="_blank"
+            >
+                Falar pelo WhatsApp
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Restaurante Flor do Barreto</p>
+        <p>© 2026 - Página demonstrativa</p>
+    </footer>
+
+    <a
+        href="https://wa.me/5511999999999"
+        class="whatsapp"
+        target="_blank"
+    >
+        WhatsApp
+    </a>
+
+</body>
+</html>
